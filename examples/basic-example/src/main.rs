@@ -1,0 +1,5 @@
+mod assets;
+
+fn main() {
+    
+}
