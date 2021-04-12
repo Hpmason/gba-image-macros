@@ -39,18 +39,3 @@ macro_rules! load_data {
         }
     };
 }
-
-/// load_data!(writer, load_as, file, var_name)
-#[macro_export]
-macro_rules! load_pal {
-    ($writer:ident, $load_as:ident, $file:literal, $name:literal) => {
-        {
-            const BYTES: &[u8] = include_bytes!($file);
-            let mut current = &BYTES[..];
-            let mut buf: [u16; BYTES.len()/2] = [0; BYTES.len()/2];
-
-            current.read_u16_into::<LittleEndian>(&mut buf).unwrap();
-            $writer.add_array($name, "u16", &buf);
-        }
-    }
-}
