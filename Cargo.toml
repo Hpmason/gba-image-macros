@@ -1,5 +1,5 @@
 [package]
-name = "macro-testing"
+name = "gba-image-macros"
 version = "0.1.0"
 authors = ["Mason Ginter <mason@dagint.com>"]
 edition = "2018"
