@@ -1,4 +1,4 @@
-use macro_testing::prelude::*;
+use gba_image_macros::prelude::*;
 
 fn main() {
     println!("cargo:rerun-if-changed=build.rs");

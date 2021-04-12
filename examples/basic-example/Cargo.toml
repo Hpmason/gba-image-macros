@@ -10,5 +10,5 @@ edition = "2018"
 [build-dependencies]
 # Waiting on PR: https://github.com/vitiral/build_const/pull/4
 build_const = {git = "https://github.com/Hpmason/build_const"}
-macro-testing = {path = "../../"}
+gba-image-macros = {path = "../../"}
 byteorder = "1.4"
